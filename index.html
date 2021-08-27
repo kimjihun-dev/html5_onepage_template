@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        *, body { box-sizing: border-box; margin: 0; padding: 0; color: #333; }
+        html { font-size: 62.5%; }
+        a { text-decoration: none; }
+        li { list-style: none; }
+        header { max-width: 1200px; padding: 0 3rem; height: 100px; line-height: 100px; background-color: bisque; margin: auto; display: flex; justify-content: space-between;  }
+        .logo { display: block; font-size: 2.5rem; border: 1px solid #333; } 
+        .gnb { display: flex; }
+        .gnb li { margin-right: 1.6rem; border: 1px solid blue; }
+        .gnb li a { font-size: 1.8rem; color: #ddd; border: 1px solid red; }
+
+        .container { height: calc(100vh - 200px); border: 1px solid red; }
+
+        footer { background-color: chocolate; }
+        .footer-inner { max-width: 1200px; height: 100px;  margin: auto; }
+
+        @media all and (max-width: 768px) {
+            header { padding: 0 1.5rem; }
+            .logo { font-size: 1.8rem; }
+            .gnb li { margin-right: 1.2rem; }
+            .gnb li a { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><a href="#!" class="logo">LOGO</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#!">menu1</a></li>
+                    <li><a href="#!">menu2</a></li>
+                    <li><a href="#!">menu3</a></li>
+                    <li><a href="#!">menu4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <p>test</p>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-inner">
+                <p>footer</p>
+            </section>
+        </footer>
+    </div>
+    <script>
+        window.onresize = function() {
+            document.location.reload();
+        }
+    </script>
+</body>
+</html>
